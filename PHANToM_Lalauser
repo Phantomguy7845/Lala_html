@@ -1,2 +1,2 @@
-if(global_user == "PHANToMr" and global_password == "stang2000"){global_PHANToMs = XL182729;return true}
-else if(global_user == "PHANToM" and global_password == "stang2000"){global_PHANToMs = XL182729;return true}
+if(global_user == "PHANToMr" and global_password == "stang2000"){global_PHANToMs = "XL182729";return true}
+else if(global_user == "PHANToM" and global_password == "stang2000"){global_PHANToMs = "XL182729";return true}
