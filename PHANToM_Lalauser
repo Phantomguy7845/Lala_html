@@ -2,3 +2,4 @@ if(global_user == "PHANToMr" and global_password == "stang2000"){global_PHANToMs
 else if(global_user == "PHANToM" and global_password == "stang2000"){global_PHANToMs = "XL182729";return true}
 else if(global_user == "god177499" and global_password == "177499"){global_PHANToMs = "NR395821";return true}
 else if(global_user == "kong2411" and global_password == "kong2411"){global_PHANToMs = "JZ297350";return true}
+else if(global_user == "PHANToMMaster" and global_password == "Test124525")nullglobal_PHANToMs = "WV420303";return true}
