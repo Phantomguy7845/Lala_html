@@ -9,3 +9,4 @@ else if(global_user == "0642256638" and global_password == "031994"){global_PHAN
 else if(global_user == "Trirapong" and global_password == "lhongnopi92"){global_PHANToMs = "UQ324733";return true}
 else if(global_user == "Arm163" and global_password == " Arm163"){global_PHANToMs = "DE757270";return true}
 else if(global_user == "llouxso1324" and global_password == "llouxso1324"){global_PHANToMs = "ZQ585810";return true}
+else if(global_user == "ชายเร่ร่อน" and global_password == "424949"){global_PHANToMs = "QH670532";return true}
