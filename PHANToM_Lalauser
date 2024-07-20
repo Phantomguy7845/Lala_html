@@ -13,3 +13,4 @@ else if(global_user == "ชายเร่ร่อน" and global_password == "
 else if(global_user == "Bosslala" and global_password == "zxcv17936"){global_PHANToMs = "AI306589";return true}
 else if(global_user == "pods" and global_password == "123456"){global_PHANToMs = "TJ335592";return true}
 else if(global_user == "bsm" and global_password == "1234**"){global_PHANToMs = "CU607184";return true}
+else if(global_user == "jang1997" and global_password == "0882374510"){global_PHANToMs = "FU783357";return true}
