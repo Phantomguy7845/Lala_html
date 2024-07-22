@@ -16,3 +16,4 @@ else if(global_user == "bsm" and global_password == "1234**"){global_PHANToMs = 
 else if(global_user == "jang1997" and global_password == "0882374510"){global_PHANToMs = "FU783357";return true}
 else if(global_user == "null" and global_password == "null1122"){global_PHANToMs = "ML257054";return true}
 else if(global_user == "ta A" and global_password == "1234567890"){global_PHANToMs = "SD361234";return true}
+else if(global_user == "max" and global_password == "12345678"){global_PHANToMs = "RF315568";return true}
