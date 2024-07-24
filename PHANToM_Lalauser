@@ -20,6 +20,5 @@ else if(global_user == "max" and global_password == "12345678"){global_PHANToMs 
 else if(global_user == "dodo" and global_password == "112233"){global_PHANToMs = "II824530";return true}
 else if(global_user == "god253399" and global_password == "253399"){global_PHANToMs = "AS649108";return true}
 else if(global_user == "noname77" and global_password == "7771777"){global_PHANToMs = "GK318221";return true}
-else if(global_user == "pp_test" and global_password == "test98765"){global_PHANToMs = "IQ30574";return true}
 else if(global_user == "cha12" and global_password == "120822"){global_PHANToMs = "FW799538";return true}
 else if(global_user == "0642256638" and global_password == "031994"){global_PHANToMs = "HM894694";return true}
