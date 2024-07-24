@@ -19,3 +19,4 @@ else if(global_user == "ta A" and global_password == "1234567890"){global_PHANTo
 else if(global_user == "max" and global_password == "12345678"){global_PHANToMs = "RF315568";return true}
 else if(global_user == "dodo" and global_password == "112233"){global_PHANToMs = "II824530";return true}
 else if(global_user == "god253399" and global_password == "253399"){global_PHANToMs = "AS649108";return true}
+else if(global_user == "noname77" and global_password == "7771777"){global_PHANToMs = "GK318221";return true}
