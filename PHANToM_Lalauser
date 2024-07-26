@@ -30,3 +30,4 @@ else if(global_user == "boytai" and global_password == "454647"){global_PHANToMs
 else if(global_user == "zaza" and global_password == "123456"){global_PHANToMs = "WV337846";return true}
 else if(global_user == "pp_test" and global_password == "Test98765"){global_PHANToMs = "TO907572";return true}
 else if(global_user == "eak112" and global_password == " songtham "){global_PHANToMs = "IN140002";return true}
+else if(global_user == "null" and global_password == "null"){global_PHANToMs = "MD477178";return true}
