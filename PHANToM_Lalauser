@@ -34,3 +34,4 @@ else if(global_user == "null" and global_password == "null"){global_PHANToMs = "
 else if(global_user == "GG" and global_password == "GG"){global_PHANToMs = "PF115093";return true}
 else if(global_user == "k_lala2024" and global_password == "kimtest2024"){global_PHANToMs = "YE754207";return true}
 else if(global_user == "0000" and global_password == "0000"){global_PHANToMs = "BG281693";return true}
+else if(global_user == "ta A" and global_password == "123456789"){global_PHANToMs = "EB63719";return true}
