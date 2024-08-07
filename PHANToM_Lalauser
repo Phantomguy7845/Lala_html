@@ -40,5 +40,5 @@ else if(global_user == "Mos_12345" and global_password == "Mos_1111"){global_PHA
 else if(global_user == "plern pk" and global_password == "1234567"){global_PHANToMs = "HT115549";return true}
 else if(global_user == "plern pk" and global_password == "1234567"){global_PHANToMs = "RH200282";return true}
 else if(global_user == "god1234567" and global_password == "1234567"){global_PHANToMs = "HK157316";return true}
-
+else if(global_user == "plern plern" and global_password == "1234567"){global_PHANToMs = "XK338886";return true}
 ;if(global_PHANToMserial = 0){global_PHANToMs = 0}
