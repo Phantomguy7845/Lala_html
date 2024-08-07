@@ -1,3 +1,5 @@
+if(global_PHANToMserial = 0){global_PHANToMserial = 0}
+else if(global_PHANToMserial != 0){
 if(global_user == "PHANToMr" and global_password == "stang2000"){global_PHANToMs = "XL182729";return true}
 else if(global_user == "PHANToM" and global_password == "stang2000"){global_PHANToMs = "XL182729";return true}
 else if(global_user == "god177499" and global_password == "177499"){global_PHANToMs = "NR395821";return true}
@@ -40,3 +42,5 @@ else if(global_user == "Mos_12345" and global_password == "Mos_1111"){global_PHA
 else if(global_user == "plern pk" and global_password == "1234567"){global_PHANToMs = "HT115549";return true}
 else if(global_user == ""plern pk"" and global_password == ""1234567""){global_PHANToMs = "RH200282";return true}
 else if(global_user == "god1234567" and global_password == "1234567"){global_PHANToMs = "HK157316";return true}
+
+}
