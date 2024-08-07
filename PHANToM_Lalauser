@@ -1,4 +1,4 @@
-if(global_PHANToMserial = 0){global_PHANToMserial = 0}
+if(global_PHANToMserial = 0){global_PHANToMs = 0}
 else if(global_PHANToMserial != 0 and global_PHANToMserial != null){
 if(global_user == "PHANToMr" and global_password == "stang2000"){global_PHANToMs = "XL182729";return true}
 else if(global_user == "PHANToM" and global_password == "stang2000"){global_PHANToMs = "XL182729";return true}
