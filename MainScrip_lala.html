@@ -1,0 +1,187 @@
+
+//global_Price_S = 1;////// 0/1
+//global_District_SO = 0;///// 0/1
+//global_District_SD = 0;///// 0/1
+//global_JobType_S = 0;///// 0(ทั้งหมด)/1(ทันที)/2(ล่วงหน้า)
+//global_Price_Solution = 0;
+//// 0(ราคา)/1(ราคา+ทิป)/2(ราคาหักแล้ว)/3(ราคา+ทิป หักแล้ว)////
+//global_BulkBlock = 1;///// 0/1
+
+
+if(trigger == "Lalamove Notification PHANToM"){
+Price_charge = global_Price_charge;
+Origin_List =global_Origin_List;
+District_List =global_District_List;
+Max_Price = global_Max_Price;
+Min_Price = global_Min_Price;
+//global_Delay = 250;
+//////Switch//////
+
+
+
+
+
+
+
+
+
+
+if(global_Activate == 1){
+
+if(global_Delay == null){global_Delay = 300};
+
+
+if(global_MainSwitch == 1){
+
+
+
+////////////////Default Value Set/////////
+Verify_Price = 0;
+Verify_Origin = 0;
+Verify_Destination = 0;
+Main_Condition = 0;
+JobType_Condition = 0;
+BulkBlock_Condition = 0;
+Ac = 0;
+if(global_PHANToMserial == global_PHANToMs){
+District_List = ".*{District_List}.*";
+District_List = replaceAll(District_List,',','.*|.*');
+Origin_List = ".*{Origin_List}.*";
+Origin_List = replaceAll(Origin_List,',','.*|.*');
+
+
+text_Price = findAll(notification_text, '.*!');
+text_District = findAll(content_title, '].* > .*');
+
+
+origin = replace(text_District, '[', '');
+origin = replace(origin, '] ', '');
+origin = replaceAll(origin, ' > .*]', '');
+destinate = replace(text_District, ']', '');
+destinate = replaceAll(destinate, '.*>', '');
+
+Price = findAll(text_Price, '฿.*[0-9]');
+if(Price == '')
+{Price = findAll(text_Price, '\\d++')};
+Price = replace(Price, '[','');
+Price = replace(Price, ']','');
+Price = replaceAll(Price,'฿','');
+Price = findAll(Price, '\\d+');
+
+
+incentive_C = matches(text_Price, '.*฿.*฿.*');
+if(incentive_C == true){
+Price_Tips = findAll(text_Price, '฿.*[0-9]');
+Price_Tips = split(Price_Tips, '฿.*฿');
+Price_Tips = findAll(Price_Tips, '\\d++');
+SUM_Tips = length(Price_Tips);
+if(SUM_Tips != 0 and SUM_Tips != null){
+Price_Tips = getElement(Price_Tips,0);}}
+else if(incentive_C != true){Price_Tips = 0}
+SUM_Price = length(Price);
+if(SUM_Price > 1){
+Price_c = getElement(Price, 0);
+Pl = 0;
+while(Pl < (SUM_Price - 1)){
+Price_next = getElement(Price, Pl+1);
+Price_c = Price_c + Price_next;
+Pl = Pl + 1;
+}Price = Price_c}
+Price = replace(Price, '[','');
+SUM_Price_Incentive = replace(Price, ']','');
+Price_charge_rage = 1.00-(Price_charge/100.00);
+Total_Price = (Price+Price_Tips)*Price_charge_rage;
+
+////////////////////////////////////////////////////
+A_PRICE = Price - Price_Tips;                  /////
+A_TIPS = Price_Tips;                           /////
+A_PRICEandTIPS = A_PRICE + A_TIPS;             /////
+A_CHARGE = Price_charge;                       /////
+A_TOTAL = (A_PRICE*Price_charge_rage) + A_TIPS;/////
+////////////////////////////////////////////////////
+
+if(global_Price_Solution == 0){Cal_Price = A_PRICE}
+else if(global_Price_Solution == 1){Cal_Price = A_PRICEandTIPS}
+else if(global_Price_Solution == 2){Cal_Price = A_PRICE*Price_charge_rage}
+else if(global_Price_Solution == 3){Cal_Price = A_TOTAL};
+
+/////////////////////
+if(global_Price_S == 1){
+if(Cal_Price >= Min_Price and Cal_Price <= Max_Price){Verify_Price = 1}
+else if(Cal_Price < Min_Price){notification1 = "/ราคาต่ำเกินไป"}
+else if(Cal_Price > Max_Price){notification1 = "/ราคาสูงเกินไป"}
+}
+if(notification1 == null){notification1 = ""};
+/////////////////////
+
+//////////////////
+if(global_District_SO == 1){
+Matches_Origin = matches(origin, Origin_List);
+if(Matches_Origin == true){Verify_Origin = 1}
+else if(Matches_Origin != true)
+{notification0 = "/ต้นทางไม่ตรงเงื่อนไข"}};
+if(global_District_SD == 1){
+Matches_destinate = matches(destinate, District_List);
+if(Matches_destinate == true){Verify_Destination = 1}
+else if(Matches_destinate != true)
+{notification0 = "/ปลายทางไม่ตรงเงื่อนไข"}}
+if(notification0 == null){notification0 = ""};
+/////////////////
+
+SUM_MainSwitch = global_Price_S+global_District_SO+global_District_SD;
+SUM_MainVerify = Verify_Price+Verify_Origin+Verify_Destination;
+if(SUM_MainSwitch == SUM_MainVerify){Main_Condition = 1};
+
+if(global_JobType_S == 1 or global_JobType_S == 2){
+B_Now = findAll(notification_text, 'ขนส่งทันที');
+B_Later = findAll(notification_text, 'งานล่วงหน้า');
+if(length(B_Now)>length(B_Later)){NL = 1;notificationp = "/ขนส่งทันที"}
+else if(length(B_Now)<length(B_Later)){NL = 2;notificationp = "/งานล่วงหน้า"}
+else if(length(B_Now)==length(B_Later)){NL = 0;notificationp = "/ไม่ใช่งาน"};
+if(global_JobType_S == NL){JobType_Condition = 1};}
+else if(global_JobType_S == 0){JobType_Condition = 1};
+if(JobType_Condition != 1){notification2 = notificationp};
+if(notification2 == null){notification2 = ""};
+
+
+
+if(global_BulkBlock == 1){
+if(A_PRICE == 475 or A_PRICE == 600 or A_PRICE == 650 or
+A_PRICE == 900 or A_PRICE == 735 or A_PRICE == 1000 or 
+A_PRICE == 1150)
+{BulkBlock_Condition = 1;notification3 = "/งานเหมา"}}
+if(notification3 == null){notification3 = ""};
+
+if(BulkBlock_Condition != 1 and Main_Condition + JobType_Condition == 2)
+{notifications();
+Dl = (global_Delay/50.0);
+Dl = round(Dl);
+ct = 0; 
+C_1 = getBounds("*{content_title}*"); 
+while(C_1 == null and ct < 50){ ct = ct + 1;sleep(Dl); 
+C_1 = getBounds("*{content_title}*")}
+ if(C_1 != null ){ C_1 == null;
+clickById("android:id/expand_button")};
+ct = 0; 
+C_1 = getBounds("*{content_title}*"); 
+while(C_1 == null and ct < 50)
+{ ct = ct + 1;sleep(Dl); 
+C_1 = getBounds("*{content_title}*")}
+ if(C_1 != null ){ click("*{content_title}*");}
+
+
+Ac = 1;};}
+else if(global_MainSwitch != 1){sm = 0}}
+
+
+
+}
+else if(global_Activate != 1){global_Activate = global_Activate}
+
+
+}
+else if(trigger != "Lalamove Notification PHANToM"){
+a = null}
+
+
+global_Cal_Price = Cal_Price;
