@@ -55,3 +55,4 @@ else if(global_user == "" and global_password == "" and 1725452538984 <= trigger
 else if(global_user == "Tum777" and global_password == "Tum777"){global_PHANToMs = "BN666122";return true}
 else if(global_user == "Tonza12" and global_password == "tonza12" and 1725525699847 > triggertime){global_PHANToMs = "WP140735";return true}
 else if(global_user == "Tonza12" and global_password == "tonza12" and 1725525699847 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//7
+else if(global_user == "bxsiiz1993" and global_password == "111116ot"){global_PHANToMs = "MN251674";return true}
