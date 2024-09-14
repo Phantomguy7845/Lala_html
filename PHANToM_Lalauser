@@ -58,5 +58,5 @@ else if(global_user == "Tonza12" and global_password == "tonza12" and 1725525699
 else if(global_user == "bxsiiz1993" and global_password == "111116ot"){global_PHANToMs = "MN251674";return true}
 else if(global_user == "golf" and global_password == "Mi1970" and 1726639682416 > triggertime){global_PHANToMs = "VS250631";return true}
 else if(global_user == "golf" and global_password == "Mi1970" and 1726639682416 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//7
-else if(global_user == "payuta" and global_password == "payuta22" and 1726927575574 > triggertime){global_PHANToMs = "KX865228";return true}
-else if(global_user == "payuta" and global_password == "payuta22" and 1726927575574 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//7
+else if(global_user == "payuta11" and global_password == "payuta12" and 1726928936501 > triggertime){global_PHANToMs = "YN295603";return true}
+else if(global_user == "payuta11" and global_password == "payuta12" and 1726928936501 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//7
