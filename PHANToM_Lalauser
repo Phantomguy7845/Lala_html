@@ -60,3 +60,5 @@ else if(global_user == "golf" and global_password == "Mi1970" and 1726639682416 
 else if(global_user == "golf" and global_password == "Mi1970" and 1726639682416 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//7
 else if(global_user == "payuta11" and global_password == "payuta12" and 1726928936501 > triggertime){global_PHANToMs = "YN295603";return true}
 else if(global_user == "payuta11" and global_password == "payuta12" and 1726928936501 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//7
+else if(global_user == "M_1122" and global_password == "AA12345" and 1726971550441 > triggertime){global_PHANToMs = "PW157288";return true}
+else if(global_user == "M_1122" and global_password == "AA12345" and 1726971550441 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//7
