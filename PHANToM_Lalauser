@@ -68,3 +68,5 @@ else if(global_user == "lalamove123" and global_password == "king123" and 172699
 else if(global_user == "lalamove123" and global_password == "king123" and 1726995579360 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//7
 else if(global_user == "MK_123" and global_password == "M_12345" and 1729040068850 > triggertime){global_PHANToMs = "RQ44815";return true}
 else if(global_user == "MK_123" and global_password == "M_12345" and 1729040068850 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//30
+else if(global_user == "tumza1" and global_password == "tumza1" and 1727079238411 > triggertime){global_PHANToMs = "XZ362994";return true}
+else if(global_user == "tumza1" and global_password == "tumza1" and 1727079238411 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//7
