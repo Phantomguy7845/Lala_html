@@ -51,7 +51,7 @@ Origin_List = replaceAll(Origin_List,',','.*|.*');
 
 
 text_Price = findAll(notification_text, '.*!');
-text_District = findAll(content_title, '].* > .*');
+text_District = findAll(content_title, '.* > .*');
 
 
 origin = replace(text_District, '[', '');
