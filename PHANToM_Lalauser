@@ -75,3 +75,5 @@ else if(global_user == "pp_wirat" and global_password == "Aa112233" and 17270848
 else if(global_user == "toom2" and global_password == "193999"){global_PHANToMs = "AF501152";return true}
 else if(global_user == "wirat" and global_password == "Aa112233" and 1727576155902 > triggertime){global_PHANToMs = "JD905953";return true}
 else if(global_user == "wirat" and global_password == "Aa112233" and 1727576155902 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//7
+else if(global_user == "null" and global_password == "null" and 1729850701771 > triggertime){global_PHANToMs = "GN234657";return true}
+else if(global_user == "null" and global_password == "null" and 1729850701771 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//30
