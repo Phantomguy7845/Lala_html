@@ -1,4 +1,5 @@
 if(global_user == "PHANToMr" and global_password == "stang2000"){global_PHANToMs = "XL182729";return true}
+else if(global_user == "zaza1234" and global_password == "12345"){global_PHANToMs = "HF108366";return true}
 else if(global_user == "PHANToM" and global_password == "stang2000"){global_PHANToMs = "XL182729";return true}
 else if(global_user == "god177499" and global_password == "177499"){global_PHANToMs = "NR395821";return true}
 else if(global_user == "kong2411" and global_password == "kong2411"){global_PHANToMs = "JZ297350";return true}
