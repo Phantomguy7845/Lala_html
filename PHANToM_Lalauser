@@ -80,3 +80,5 @@ else if(global_user == "Tor" and global_password == "Tor" and 1728008749910 <= t
 else if(global_user == "golf" and global_password == "1157" and 1729047586107 > triggertime){global_PHANToMs = "GM21155";return true}
 else if(global_user == "golf" and global_password == "1157" and 1729047586107 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//7
 else if(global_user == "kong241140" and global_password == "kong241140"){global_PHANToMs = "MI594319";return true}
+else if(global_user == "PHANToM1669" and global_password == "PHANToM1669" and 1733512084865 > triggertime){global_PHANToMs = "YX268931";return true}
+else if(global_user == "PHANToM1669" and global_password == "PHANToM1669" and 1733512084865 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//30
