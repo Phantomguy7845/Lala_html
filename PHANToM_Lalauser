@@ -86,3 +86,5 @@ else if(global_user == "PHANToM1669" and global_password == "stang2000"){global_
 else if(global_user == "boy" and global_password == "454647"){global_PHANToMs = "ZO699739";return true}
 else if(global_user == "111" and global_password == "111" and 1734963237870 > triggertime){global_PHANToMs = "MD189222";return true}
 else if(global_user == "111" and global_password == "111" and 1734963237870 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//7
+else if(global_user == "1972" and global_password == "1972" and 1735014801465 > triggertime){global_PHANToMs = "MD189222";return true}
+else if(global_user == "1972" and global_password == "1972" and 1735014801465 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//7
