@@ -1,4 +1,6 @@
 if(global_user == "PHANToMr" and global_password == "stang2000"){global_PHANToMs = "XL182729";return true}
+else if(global_user == "fish" and global_password == "fish" and 1740792885492 > triggertime){global_PHANToMs = "OC384939";return true}
+else if(global_user == "fish" and global_password == "fish" and 1740792885492 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//30
 else if(global_user == "Taw" and global_password == "Tawza1300" and 1739998015395 > triggertime){global_PHANToMs = "SA10646";return true}
 else if(global_user == "Taw" and global_password == "Tawza1300" and 1739998015395 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//30
 else if(global_user == "jang200" and global_password == "0950313730"){global_PHANToMs = "DF904983";return true}
