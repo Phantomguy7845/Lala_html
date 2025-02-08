@@ -1,4 +1,6 @@
 if(global_user == "PHANToMr" and global_password == "stang2000"){global_PHANToMs = "XL182729";return true}
+else if(global_user == "thetor56 " and global_password == "torkui56 " and 1741569639136 > triggertime){global_PHANToMs = "II698998";return true}
+else if(global_user == "thetor56 " and global_password == "torkui56 " and 1741569639136 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//30
 else if(global_user == "godz" and global_password == "godz"){global_PHANToMs = "IL519683";return true}
 else if(global_user == "ปลา" and global_password == "ปลา" and 1740937278995 > triggertime){global_PHANToMs = "UE70840";return true}
 else if(global_user == "ปลา" and global_password == "ปลา" and 1740937278995 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//30
