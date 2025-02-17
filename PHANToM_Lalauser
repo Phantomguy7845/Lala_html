@@ -1,6 +1,6 @@
 if(global_user == "PHANToMr" and global_password == "stang2000"){global_PHANToMs = "XL182729";return true}
-else if(global_user == "thetor56" and global_password == "torkui56" and 1742084914325 > triggertime){global_PHANToMs = "IR127213";return true}
-else if(global_user == "thetor56" and global_password == "torkui56" and 1742084914325 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//30
+else if(global_user == "thetor56 " and global_password == "torkui56 " and 1742221331831 > triggertime){global_PHANToMs = "SI235380";return true}
+else if(global_user == "thetor56 " and global_password == "torkui56 " and 1742221331831 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//30
 else if(global_user == "ko" and global_password == "ko"){global_PHANToMs = "VW678579";return true}
 else if(global_user == "thetor56 " and global_password == "torkui56 " and 1741569639136 > triggertime){global_PHANToMs = "II698998";return true}
 else if(global_user == "thetor56 " and global_password == "torkui56 " and 1741569639136 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//30
