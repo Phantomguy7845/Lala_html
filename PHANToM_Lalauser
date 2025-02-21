@@ -1,4 +1,5 @@
 if(global_user == "PHANToMr" and global_password == "stang2000"){global_PHANToMs = "XL182729";return true}
+else if(global_user == "top" and global_password == "top"){global_PHANToMs = "LU993439";return true}
 else if(global_user == "torkui56 " and global_password == "thetor56 " and 1742516964522 > triggertime){global_PHANToMs = "GD666044";return true}
 else if(global_user == "torkui56 " and global_password == "thetor56 " and 1742516964522 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//30
 else if(global_user == "thetor56 " and global_password == "torkui56 " and 1742221331831 > triggertime){global_PHANToMs = "SI235380";return true}
