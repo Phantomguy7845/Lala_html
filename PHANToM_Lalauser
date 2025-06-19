@@ -6,8 +6,8 @@ else if(global_user == "1972" and global_password == "1972" and 1747286684927 > 
 else if(global_user == "1972" and global_password == "1972" and 1747286684927 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//7
 else if(global_user == "tey1213000" and global_password == "tey12130" and 1747367019987 > triggertime){global_PHANToMs = global_PHANToMserial;return true}
 else if(global_user == "tey1213000" and global_password == "tey12130" and 1747367019987 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//7
-else if(global_user == "anag" and global_password == "12345" and 1750128996188 > triggertime){global_PHANToMs = global_PHANToMserial;return true}
-else if(global_user == "anag" and global_password == "12345" and 1747188379115 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//7
+else if(global_user == "anag" and global_password == "12345" and 1750128996188 < triggertime){global_PHANToMs = global_PHANToMserial;return true}
+else if(global_user == "anag" and global_password == "12345" and 1747188379115 >= triggertime){global_PHANToMs = null;global_Activate = null;return false}//7
 else if(global_user == "1972" and global_password == "1972" and 1746332605305 > triggertime){global_PHANToMs = "FA274543";return true}
 else if(global_user == "1972" and global_password == "1972" and 1746332605305 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//7
 else if(global_user == "tey121300" and global_password == "tey1213000" and 1748320620436 > triggertime){global_PHANToMs = "ON239031";return true}
