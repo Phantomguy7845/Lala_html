@@ -1,4 +1,5 @@
 if(global_user == "PHANToMr" and global_password == "stang2000"){global_PHANToMs = "XL182729";return true}
+else if(global_user == "PHANToM" and global_password == "pp1669"){global_PHANToMs = global_PHANToMserial;return true}
 else if(global_user == "zaza11" and global_password == "123456"){global_PHANToMs = "RN294457";return true}
 else if(global_user == "tey12130" and global_password == "tey121300" and 1754902009765 > triggertime){global_PHANToMs = "PQ518295";return true}
 else if(global_user == "tey12130" and global_password == "tey121300" and 1754902009765 <= triggertime){global_PHANToMs = null;global_Activate = null;return false}//30
