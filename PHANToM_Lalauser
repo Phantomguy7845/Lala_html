@@ -1,5 +1,6 @@
 if(global_user == "PHANToMr" and global_password == "stang2000"){global_PHANToMs = "XL182729";return true}
 else if(global_user == "PHANToM" and global_password == "pp1669"){global_PHANToMs = global_PHANToMserial;return true}
+else if(global_user == "Sorry1234" and global_password == "Sorry1234"){global_PHANToMs = "VI273237";return true}
 else if(global_user == "Yes" and global_password == "Yes"){global_PHANToMs = "EG683400";return true}
 else if(global_user == "คิงคอง" and global_password == "Kong "){global_PHANToMs = "TP707262";return true}
 else if(global_user == "zaza11" and global_password == "123456"){global_PHANToMs = "RN294457";return true}
